@@ -1,14 +1,15 @@
 import React from "react"
 
 import Header from "../components/header"
-import { SingleColumn } from "../components/layout"
-import { LongCard } from "../components/card"
+import { SingleColumn, TwoColumn } from "../components/layout"
+import { LongCard, ShortCard } from "../components/card"
 
 import "../styles/styles.css"
 
 const IndexPage = () => (
   <div class="container">
     <Header/>
+
     <SingleColumn title="Collaborative Projects">
       <LongCard
         title="LinkUp - Australian University Event Tracker"
@@ -23,6 +24,19 @@ const IndexPage = () => (
                {link: "https://expressjs.com/", title: "Express.js"}]}
       />
     </SingleColumn>
+
+    <TwoColumn title="Personal Projects">
+      <ShortCard
+        title="CubeSim"
+        subheading="Rubiks Cube Simulater and Solver"
+        image="./images/cube.webp"
+        dotpoints={["Renders a two-dimensional Rubik's cube that can be controlled by the user with keyboard controls.",
+                    "Generates solutions for any given state of the cube specified using the standard beginner's method.",
+                    "Built in Python with Pygame for visuals and controls."]}
+        tags={[{link: "https://www.python.org/", title: "Python"},
+               {link: "https://www.pygame.org/news", title: "Pygame"}]}
+      />
+    </TwoColumn>
   </div>
 )
 

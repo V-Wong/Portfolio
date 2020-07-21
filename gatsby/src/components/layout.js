@@ -20,4 +20,16 @@ const SingleColumn = props => {
   )
 }
 
-export { SingleColumn }
+const TwoColumn = props => {
+  return (
+    <>
+      <h2 class="section-heading">Personal Projects</h2>
+      <hr/>
+      <section class="two-column">
+        {props.children}
+      </section>
+    </>
+  )
+}
+
+export { SingleColumn, TwoColumn }
