@@ -3,6 +3,7 @@ import React from "react"
 import Header from "../components/header"
 import { SingleColumn, TwoColumn } from "../components/layout"
 import { LongCard, ShortCard } from "../components/card"
+import Footer from "../components/footer"
 
 import "../styles/styles.css"
 
@@ -37,6 +38,8 @@ const IndexPage = () => (
                {link: "https://www.pygame.org/news", title: "Pygame"}]}
       />
     </TwoColumn>
+
+    <Footer/>
   </div>
 )
 
