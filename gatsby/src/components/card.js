@@ -6,7 +6,8 @@ const LongCard = props => {
       <div class="description">
         <h3>{props.title}</h3>
         <h4 class="project-subheading">{props.subheading}</h4>
-        <a class="demo-link underline" href={props.link} target="_blank">Live Demo</a>
+        {props.link1 ? <a class="demo-link underline" href={props.link1.url} target="_blank">{props.link1.title}</a> : null}
+			  {props.link2 ? <a class="repo-link underline" href={props.link2.url} target="_blank">{props.link2.title}</a> : null}
       </div>
       <div class="image-container">
         <img class="image" src={props.image}/>
@@ -36,9 +37,9 @@ const ShortCard = props => {
     <div class="card">
       <h3>{props.title}</h3>
       <h4 class="project-subheading">{props.subheading}</h4>
-      <a class="demo-link underline" href={props.demo} target="_blank">Live Demo</a>
-			<a class="repo-link underline" href={props.repo} target="_blank">Repository</a>
-      <img class="image" src={props.image}/>
+      {props.link1 ? <a class="demo-link underline" href={props.link1.url} target="_blank">{props.link1.title}</a> : null}
+			{props.link2 ? <a class="repo-link underline" href={props.link2.url} target="_blank">{props.link2.title}</a> : null}
+      {props.image ? <img class="image" src={props.image}/> : null}
       <ul>
         {props.dotpoints.map(point => (
             <li>
