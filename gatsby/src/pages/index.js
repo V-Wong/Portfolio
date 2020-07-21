@@ -6,6 +6,12 @@ import { SingleColumn, TwoColumn } from "../components/layout"
 import { LongCard, ShortCard } from "../components/card"
 import Footer from "../components/footer"
 
+import linkUpProjectImage from "../images/linkup.svg"
+import cubeProjectImage from "../images/cube.webp"
+import huffmanProjectImage from "../images/huffman.webp"
+import rubikSocImage from "../images/rubiksoc.webp"
+import compCubeImage from "../images/comp-cube.svg"
+
 import "../styles/styles.css"
 
 const IndexPage = () => (
@@ -27,7 +33,7 @@ const IndexPage = () => (
           title="LinkUp - Australian University Event Tracker"
           subheading="Full Stack Developer"
           link1={{ url: "https://linkup.website", title: "Live Demo" }}
-          image="./images/linkup.webp"
+          image={linkUpProjectImage}
           dotpoints={["Centralised source of events across Australian universities including UNSW, USyd and UniMelb.",
                       "Helps students discover new societies and consequently allows societies to gain exposure.",
                       "Actively working with UNSW societies to better support student academic and social life.",
@@ -43,7 +49,7 @@ const IndexPage = () => (
           title="CubeSim"
           subheading="Rubiks Cube Simulater and Solver"
           link2={{ url: "https://github.com/V-Wong/CubeSim", title: "Repository" }}
-          image="./images/cube.webp"
+          image={cubeProjectImage}
           dotpoints={["Renders a two-dimensional Rubik's cube that can be controlled by the user with keyboard controls.",
                       "Generates solutions for any given state of the cube specified using the standard beginner's method.",
                       "Built in Python with Pygame for visuals and controls."]}
@@ -56,7 +62,7 @@ const IndexPage = () => (
           subheading="Huffman Encoding Visualisation Tool"
           link1={{ url: "https://vwong.dev/Huffman-Encoding", title: "Live Demo" }}
           link2={{ url: "https://github.com/V-Wong/Huffman-Encoding", title: "Repository" }}
-          image="./images/huffman.webp"
+          image={huffmanProjectImage}
           dotpoints={["Generates and renders a binary Huffman tree based on the user input of symbol probabilities in a given text. ",
                       "Draws the traceback encoding path for a certain symbol when a specific symbol is selected by the user.",
                       "Built in Javascript with HTML5 Canvas for visuals."]}
@@ -153,7 +159,7 @@ const IndexPage = () => (
             title="UNSW Rubik Society"
             subheading="Executive - Events Director"
             link1={{ url: "https://www.facebook.com/UNSWRubikSoc/", title: "Society Page" }}
-            image="./images/rubiksoc_small.webp" 
+            image={rubikSocImage}
             dotpoints={["Help organise Rubik's Cube tutorials and unofficial competitions at UNSW in Sydney.",
                         "Encourage students to find an interest and hobby in Rubik's Cubes and speedsolving.",
                         "Help existing speedcubers to improve and optimise their solves by hosting workshops.",
@@ -166,7 +172,7 @@ const IndexPage = () => (
             title="Competitive Rubik's Cube Speedsolver"
             subheading="Participant in WCA competitions"
             link1={{ url: "https://www.worldcubeassociation.org/persons/2014WONG08", title: "WCA Profile" }}
-            image="./images/comp-cube.svg" 
+            image={compCubeImage}
             dotpoints={["Actively participated in speedcubing competitions across Australia since 2014.",
                         "Held numerous Sydney and Australian national championship podium titles.",
                         "Held a former top 10 world ranking in one handed 3x3 Rubik's Cube solving.",
